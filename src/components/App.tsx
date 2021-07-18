@@ -11,17 +11,19 @@ const  App = () =>{
             <Router>
                 <Navbar/>
                 <br></br>
-                <div className="uk-container">
-                    <Switch>
-                        <Route path="/create">
-                            <AddTodo/>
-                        </Route>
+                <div className="uk-section uk-section-primary">
+                    <div className="uk-container">
+                        <Switch>
+                            <Route path="/create">
+                                <AddTodo/>
+                            </Route>
 
-                        <Route path="/">
-                            <h4>Minha Lista de Tarefas</h4>
-                            <TodoList/>
-                        </Route>
-                    </Switch>
+                            <Route path="/">
+                                <h4>Minha Lista de Tarefas</h4>
+                                <TodoList/>
+                            </Route>
+                        </Switch>
+                    </div>
                 </div>
             </Router>
         </TodoContext>
